@@ -1,0 +1,23 @@
+{
+  "name": "angular chart performance test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular-chart.js": "^1.0.3",
+    "angular": "1.1.5",
+    "angularjs-nvd3-directives": "0.0.8",
+    "chart.js": "2.3.0",
+    "d3": "3.3.9",
+    "moment": "2.15.1",
+    "nvd3": "1.1.13",
+    "requirejs": "2.3.2"
+
+  }
+}

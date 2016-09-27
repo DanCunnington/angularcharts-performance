@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Angular NVD3 Directives</title>
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.13-beta/nv.d3.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div ng-app='nvd3TestApp'>
+<div  ng-controller="ExampleCtrl">
+     Angular nvd3 directives
+     <button ng-click="run=!run">Start / Stop</button>
+	<nvd3-line-chart
+    	data="exampleData"
+        id="exampleId"
+        xAxisTickFormat="xAxisTickFormatFunction()"
+        yAxisTickFormat="yAxisTickFormatFunction()"
+        width="550"
+        height="350"
+        objectequality="true"
+        showXAxis="true"
+        showYAxis="true">
+        	<svg></svg>
+    </nvd3-line-chart>
+    <nvd3-line-chart
+    	data="exampleDataTwo"
+        id="exampleIdTwo"
+        xAxisTickFormat="xAxisTickFormatFunction()"
+        yAxisTickFormat="yAxisTickFormatFunction()"
+        width="550"
+        height="350"
+        objectequality="true"
+        showXAxis="true"
+        showYAxis="true">
+        	<svg></svg>
+    </nvd3-line-chart> 
+</div>
+
+</div>
+<script src="node_modules/angular/lib/angular.min.js"></script>
+  <script src="node_modules/d3/d3.min.js"></script>
+  <script src="node_modules/nvd3/nv.d3.min.js"></script>
+
+
+<script src="node_modules/moment/moment.js"></script>
+
+  <script src="http://cmaurer.github.io/angularjs-nvd3-directives/lib/angularjs-nvd3-directives/dist/angularjs-nvd3-directives.js"></script>
+  <script src="angular-nvd3-directives.js"></script>
+
+
+</body>
+</html>

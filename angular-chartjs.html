@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Angular Chart.js</title>
+</head>
+<body ng-app="examples">
+<br/>
+
+  <div style="width: 550px; height: 350px;" ng-controller="RequireCtrl">
+    <button ng-click="run=!run">Start / Stop</button>
+          <canvas width="550" height="350" class="chart chart-line" chart-data="data" chart-series="series" chart-labels="labels" chart-options="options"></canvas>
+          <canvas width="550" height="350" class="chart chart-line" chart-data="data" chart-series="series" chart-labels="labels" chart-options="options"></canvas>
+        
+  </div>
+
+<script data-main="angular-chartjs" src="node_modules/requirejs/require.js"></script>
+</body>
+</html>
