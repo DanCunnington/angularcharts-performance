@@ -3,7 +3,7 @@
 
   require.config({
     paths: {
-      angular: 'node_modules/angular/angular.min',
+      angular: 'node_modules/angular/lib/angular.min',
       chart: 'node_modules/chart.js/dist/Chart.min',
       'angular-chart': 'node_modules/angular-chart.js/dist/angular-chart.min'
     },
