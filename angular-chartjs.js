@@ -27,14 +27,23 @@
       //   [28, 48, 40, 19, 86, 27, 90]
       // ];
 
+      $scope.colours = [
+                    {
+                        backgroundColor: 'rgba(0,0,0,0)',
+                        borderColor: '#A2DED0',
+                        hoverBackgroundColor: '#A2DED0',
+                        hoverBorderColor: '#A2DED0'
+                    }
+                ];
+
       $scope.run = false;
 
       $scope.data = $scope.dataTwo = [[]];
       $scope.labels = [];
       $scope.options = {
         animation: false,
-        fill: false
-
+        fill: false,
+        backgroundColor: "#A2DED0"
       }
 
       setInterval(function() {
